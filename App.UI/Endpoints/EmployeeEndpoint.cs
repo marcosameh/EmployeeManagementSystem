@@ -29,14 +29,14 @@ namespace App.UI.Endpoints
                 .WithName("CreateCoupon")
                 .Accepts<EmployeeCreateDTO>("application/json")
                 .Produces<APIResponse>(201)
-                .Produces(400);
-            //.AddEndpointFilter<BasicValidator<EmployeeCreateDTO>>();
+                .Produces(400)
+            .AddEndpointFilter<ValidationFilter<EmployeeCreateDTO>>();
 
             app.MapPut("/api/employee", UpdateEmployee)
                 .WithName("UpdateCoupon")
                 .Accepts<EmployeeUpdateDTO>("application/json")
-                .Produces<APIResponse>(200).Produces(400);
-            //.AddEndpointFilter<BasicValidator<CouponUpdateDTO>>();
+                .Produces<APIResponse>(200).Produces(400)
+            .AddEndpointFilter<ValidationFilter<EmployeeUpdateDTO>>();
 
             app.MapDelete("/api/employee/{id:int}", DeleteEmployee);
             //.AddEndpointFilter<ParameterIDValidator>();
