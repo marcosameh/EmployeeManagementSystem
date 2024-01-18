@@ -5,3 +5,5 @@
 /App.Core/obj
 /App.Tests/bin
 /App.Tests/obj
+/App.Data/obj
+/App.Data/bin

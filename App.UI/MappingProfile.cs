@@ -1,4 +1,4 @@
-﻿using App.Core.Entities;
+﻿using App.Data.Entities;
 using App.UI.Models.DTO;
 using AutoMapper;
 

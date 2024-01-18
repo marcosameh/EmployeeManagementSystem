@@ -1,12 +1,11 @@
-﻿using App.UI.Models;
-using App.UI.Models.DTO;
-using Microsoft.AspNetCore.Mvc;
-using static Azure.Core.HttpHeader;
-using System.Net;
-using App.Core.Repository.IRepository;
-using AutoMapper;
-using App.Core.Entities;
+﻿using App.Core.Repository.IRepository;
+using App.Data.Entities;
 using App.UI.Filters;
+using App.UI.Models;
+using App.UI.Models.DTO;
+using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace App.UI.Endpoints
 {

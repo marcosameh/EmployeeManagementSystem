@@ -1,4 +1,4 @@
-﻿using App.Core.Entities;
+﻿using App.Data.Entities;
 using App.Core.Repository.IRepository;
 using App.UI.Endpoints;
 using App.UI.Models;

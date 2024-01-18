@@ -1,7 +1,6 @@
-﻿using App.Core.Entities;
-using App.Core.Repository.IRepository;
+﻿using App.Core.Repository.IRepository;
+using App.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using static Azure.Core.HttpHeader;
 
 namespace App.Core.Repository
 {
@@ -40,7 +39,7 @@ namespace App.Core.Repository
 
         public async Task UpdateAsync(Employee employee)
         {
-           _db.Employees.Update(employee);
+            _db.Employees.Update(employee);
         }
     }
 }

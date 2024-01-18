@@ -2787,6 +2787,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "App.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
         },
         "compile": {
@@ -2794,6 +2795,19 @@
         },
         "runtime": {
           "bin/placeholder/App.Core.dll": {}
+        }
+      },
+      "App.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
+        },
+        "compile": {
+          "bin/placeholder/App.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.Data.dll": {}
         }
       },
       "App.UI/1.0.0": {
@@ -8505,6 +8519,11 @@
       "type": "project",
       "path": "../App.Core/App.Core.csproj",
       "msbuildProject": "../App.Core/App.Core.csproj"
+    },
+    "App.Data/1.0.0": {
+      "type": "project",
+      "path": "../App.Data/App.Data.csproj",
+      "msbuildProject": "../App.Data/App.Data.csproj"
     },
     "App.UI/1.0.0": {
       "type": "project",

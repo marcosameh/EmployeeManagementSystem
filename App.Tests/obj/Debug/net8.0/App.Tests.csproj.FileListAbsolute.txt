@@ -157,3 +157,5 @@ D:\EmployeeManagementSystem\App.Tests\obj\Debug\net8.0\refint\App.Tests.dll
 D:\EmployeeManagementSystem\App.Tests\obj\Debug\net8.0\App.Tests.pdb
 D:\EmployeeManagementSystem\App.Tests\obj\Debug\net8.0\App.Tests.genruntimeconfig.cache
 D:\EmployeeManagementSystem\App.Tests\obj\Debug\net8.0\ref\App.Tests.dll
+D:\EmployeeManagementSystem\App.Tests\bin\Debug\net8.0\App.Data.dll
+D:\EmployeeManagementSystem\App.Tests\bin\Debug\net8.0\App.Data.pdb

@@ -1,10 +1,6 @@
 ﻿using App.UI.Models;
 using FluentValidation;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using static System.Net.Mime.MediaTypeNames;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 
 namespace App.UI.Filters
 {

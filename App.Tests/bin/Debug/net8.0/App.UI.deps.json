@@ -602,10 +602,20 @@
       },
       "App.Core/1.0.0": {
         "dependencies": {
+          "App.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
         },
         "runtime": {
           "App.Core.dll": {}
+        }
+      },
+      "App.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
+        },
+        "runtime": {
+          "App.Data.dll": {}
         }
       }
     }
@@ -1072,6 +1082,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "App.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
