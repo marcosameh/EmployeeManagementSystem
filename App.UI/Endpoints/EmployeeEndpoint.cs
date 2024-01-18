@@ -128,7 +128,7 @@ namespace App.UI.Endpoints
             {
                 await employeeRepo.UpdateAsync(_mapper.Map<Employee>(employee_U_DTO));
                 await employeeRepo.SaveAsync();
-                response.Result = _mapper.Map<Employee>(await employeeRepo.GetAsync(employee_U_DTO.Id)); ;
+                response.Result = _mapper.Map<Employee>(await employeeRepo.GetAsync(employee_U_DTO.Id));
                 response.IsSuccess = true;
                 response.StatusCode = HttpStatusCode.OK;
                 return Results.Ok(response);

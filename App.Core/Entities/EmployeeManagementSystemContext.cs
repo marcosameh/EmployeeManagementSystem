@@ -23,13 +23,13 @@ public partial class EmployeeManagementSystemContext : DbContext
 
             entity.Property(e => e.FirstName)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(30);
             entity.Property(e => e.LastName)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(30);
             entity.Property(e => e.MiddleName)
                 .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(30);
         });
 
         OnModelCreatingPartial(modelBuilder);

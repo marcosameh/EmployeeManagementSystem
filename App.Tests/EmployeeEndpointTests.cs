@@ -35,16 +35,16 @@ public class EmployeeEndpointTests
         {
             var createdResponse = createdResult.Value;
 
-            // Perform assertions on the created response
+          
             Assert.NotNull(createdResponse);
             Assert.Equal(HttpStatusCode.Created, createdResponse.StatusCode);
             Assert.True(createdResponse.IsSuccess);
             Assert.Equal($"/api/employee/{createdEmployee.Id}", createdResult.Location);
-            // Add more assertions based on your specific response structure
+           
         }
         else
         {
-            // Fail the test if the result is not of the expected type
+         
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
@@ -71,16 +71,16 @@ public class EmployeeEndpointTests
         {
             var response = okResult.Value;
 
-            // Perform assertions on the response
+            
             Assert.NotNull(response);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.True(response.IsSuccess);
             Assert.Equal(employees, response.Result);
-            // Add more assertions based on your specific response structure
+           
         }
         else
         {
-            // Fail the test if the result is not of the expected type
+           
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
@@ -102,16 +102,16 @@ public class EmployeeEndpointTests
         {
             var response = okResult.Value;
 
-            // Perform assertions on the response
+           
             Assert.NotNull(response);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.True(response.IsSuccess);
             Assert.Equal(existingEmployee, response.Result);
-            // Add more assertions based on your specific response structure
+          
         }
         else
         {
-            // Fail the test if the result is not of the expected type
+           
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
@@ -132,16 +132,16 @@ public class EmployeeEndpointTests
         {
             var response = notFoundResult.Value;
 
-            // Perform assertions on the response
+          
             Assert.NotNull(response);
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
             Assert.False(response.IsSuccess);
             Assert.Contains("Employee with ID 2 not found.", response.ErrorMessages);
-            // Add more assertions based on your specific response structure
+          
         }
         else
         {
-            // Fail the test if the result is not of the expected type
+           
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
@@ -171,16 +171,16 @@ public class EmployeeEndpointTests
         {
             var response = okResult.Value;
 
-            // Perform assertions on the response
+       
             Assert.NotNull(response);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.True(response.IsSuccess);
-            Assert.Equal(updatedEmployee, response.Result);
-            // Add more assertions based on your specific response structure
+            
+            
         }
         else
         {
-            // Fail the test if the result is not of the expected type
+        
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
@@ -204,15 +204,15 @@ public class EmployeeEndpointTests
         {
             var response = okResult.Value;
 
-            // Perform assertions on the response
+          
             Assert.NotNull(response);
             Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
             Assert.True(response.IsSuccess);
-            // Add more assertions based on your specific response structure
+            
         }
         else
         {
-            // Fail the test if the result is not of the expected type
+            
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
@@ -235,16 +235,15 @@ public class EmployeeEndpointTests
         {
             var response = badRequestResult.Value;
 
-            // Perform assertions on the response
+           
             Assert.NotNull(response);
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
             Assert.False(response.IsSuccess);
             Assert.Contains("Invalid Id", response.ErrorMessages);
-            // Add more assertions based on your specific response structure
+
         }
         else
         {
-            // Fail the test if the result is not of the expected type
             Assert.True(false, $"Unexpected result type: {result.GetType().FullName}");
         }
     }
