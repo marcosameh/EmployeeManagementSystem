@@ -41,7 +41,8 @@ namespace App.UI.Endpoints
             app.MapDelete("/api/employee/{id:int}", DeleteEmployee)
             .AddEndpointFilter<ParameterIDValidator>();
         }
-        private static async Task<IResult> CreateEmployee(IEmployeeRepository employeeRepo, IMapper mapper,
+        //method public for unit test
+        public static async Task<IResult> CreateEmployee(IEmployeeRepository employeeRepo, IMapper mapper,
                                                   [FromBody] EmployeeCreateDTO employeeCreateDTO)
         {
             var response = new APIResponse { IsSuccess = false, StatusCode = HttpStatusCode.BadRequest };
@@ -54,7 +55,7 @@ namespace App.UI.Endpoints
                 response.Result = employee;
                 response.IsSuccess = true;
                 response.StatusCode = HttpStatusCode.Created;
-                return Results.Created($"/api/employee/{employee.Id}", employee);
+                return Results.Created($"/api/employee/{employee.Id}", response);
             }
             catch (Exception ex)
             {
@@ -63,7 +64,7 @@ namespace App.UI.Endpoints
             }
         }
 
-        private static async Task<IResult> GetAllEmployee(IEmployeeRepository employeeRepo)
+        public static async Task<IResult> GetAllEmployee(IEmployeeRepository employeeRepo)
         {
             var response = new APIResponse { IsSuccess = false, StatusCode = HttpStatusCode.BadRequest };
 
@@ -90,7 +91,7 @@ namespace App.UI.Endpoints
             }
         }
 
-        private static async Task<IResult> GetEmployee(IEmployeeRepository employeeRepo, int id)
+        public static async Task<IResult> GetEmployee(IEmployeeRepository employeeRepo, int id)
         {
             var response = new APIResponse { IsSuccess = false, StatusCode = HttpStatusCode.BadRequest };
 
@@ -118,7 +119,7 @@ namespace App.UI.Endpoints
                 return Results.BadRequest(response);
             }
         }
-        private static async Task<IResult> UpdateEmployee(IEmployeeRepository employeeRepo, IMapper _mapper,
+        public static async Task<IResult> UpdateEmployee(IEmployeeRepository employeeRepo, IMapper _mapper,
                [FromBody] EmployeeUpdateDTO employee_U_DTO)
         {
             APIResponse response = new() { IsSuccess = false, StatusCode = HttpStatusCode.BadRequest };
@@ -139,7 +140,7 @@ namespace App.UI.Endpoints
             }
 
         }
-        private static async Task<IResult> DeleteEmployee(IEmployeeRepository employeeRepo, int id)
+        public static async Task<IResult> DeleteEmployee(IEmployeeRepository employeeRepo, int id)
         {
             APIResponse response = new() { IsSuccess = false, StatusCode = HttpStatusCode.BadRequest };
 
