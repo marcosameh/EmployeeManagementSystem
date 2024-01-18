@@ -3,3 +3,5 @@
 /App.UI/obj
 /App.Core/bin
 /App.Core/obj
+/App.Tests/bin
+/App.Tests/obj
