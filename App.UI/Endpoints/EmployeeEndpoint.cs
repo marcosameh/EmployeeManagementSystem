@@ -22,8 +22,8 @@ namespace App.UI.Endpoints
 
 
             app.MapGet("/api/employee/{id:int}", GetEmployee)
-                .WithName("GetEmployee").Produces<APIResponse>(200);
-            ////.AddEndpointFilter<ParameterIDValidator>();
+                .WithName("GetEmployee").Produces<APIResponse>(200)
+            .AddEndpointFilter<ParameterIDValidator>();
 
             app.MapPost("/api/employee", CreateEmployee)
                 .WithName("CreateCoupon")
@@ -38,8 +38,8 @@ namespace App.UI.Endpoints
                 .Produces<APIResponse>(200).Produces(400)
             .AddEndpointFilter<ValidationFilter<EmployeeUpdateDTO>>();
 
-            app.MapDelete("/api/employee/{id:int}", DeleteEmployee);
-            //.AddEndpointFilter<ParameterIDValidator>();
+            app.MapDelete("/api/employee/{id:int}", DeleteEmployee)
+            .AddEndpointFilter<ParameterIDValidator>();
         }
         private static async Task<IResult> CreateEmployee(IEmployeeRepository employeeRepo, IMapper mapper,
                                                   [FromBody] EmployeeCreateDTO employeeCreateDTO)
