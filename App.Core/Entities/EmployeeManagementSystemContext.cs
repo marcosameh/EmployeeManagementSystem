@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace App.Core.Models;
+namespace App.Core.Entities;
 
 public partial class EmployeeManagementSystemContext : DbContext
 {

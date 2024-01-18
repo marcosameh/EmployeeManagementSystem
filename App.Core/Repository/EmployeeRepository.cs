@@ -1,4 +1,4 @@
-﻿using App.Core.Models;
+﻿using App.Core.Entities;
 using App.Core.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using static Azure.Core.HttpHeader;

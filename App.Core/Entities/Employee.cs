@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace App.Core.Models;
+namespace App.Core.Entities;
 
 public partial class Employee
 {
