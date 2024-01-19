@@ -1,8 +1,8 @@
 ﻿using App.Data.Entities;
-using App.UI.Models.DTO;
+using App.Api.Models.DTO;
 using AutoMapper;
 
-namespace App.UI
+namespace App.Api
 {
     public class MappingProfile : Profile
     {

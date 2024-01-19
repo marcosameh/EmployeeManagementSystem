@@ -1,4 +1,4 @@
-﻿namespace App.UI.Models.DTO
+﻿namespace App.Api.Models.DTO
 {
     public class EmployeeCreateDTO
     {

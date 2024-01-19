@@ -1,13 +1,13 @@
 ﻿using App.Core.Repository.IRepository;
 using App.Data.Entities;
-using App.UI.Filters;
-using App.UI.Models;
-using App.UI.Models.DTO;
+using App.Api.Filters;
+using App.Api.Models;
+using App.Api.Models.DTO;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace App.UI.Endpoints
+namespace App.Api.Endpoints
 {
     public static class EmployeeEndpoint
     {

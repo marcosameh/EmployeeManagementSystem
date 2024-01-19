@@ -1,7 +1,7 @@
-﻿using App.UI.Models.DTO;
+﻿using App.Api.Models.DTO;
 using FluentValidation;
 
-namespace App.UI.Validations
+namespace App.Api.Validations
 {
     public class EmployeeUpdateValidation : AbstractValidator<EmployeeUpdateDTO>
     {

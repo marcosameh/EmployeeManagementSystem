@@ -1,8 +1,8 @@
-﻿using App.UI.Models;
+﻿using App.Api.Models;
 using FluentValidation;
 using System.Net;
 
-namespace App.UI.Filters
+namespace App.Api.Filters
 {
     public class ValidationFilter<T> : IEndpointFilter where T : class
     {

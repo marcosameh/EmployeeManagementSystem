@@ -1,8 +1,8 @@
 using App.Data.Entities;
 using App.Core.Repository;
 using App.Core.Repository.IRepository;
-using App.UI;
-using App.UI.Endpoints;
+using App.Api;
+using App.Api.Endpoints;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 

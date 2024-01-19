@@ -1,8 +1,8 @@
 ﻿using App.Data.Entities;
 using App.Core.Repository.IRepository;
-using App.UI.Endpoints;
-using App.UI.Models;
-using App.UI.Models.DTO;
+using App.Api.Endpoints;
+using App.Api.Models;
+using App.Api.Models.DTO;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Moq;

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace App.UI.Models
+namespace App.Api.Models
 {
     public class APIResponse
     {
